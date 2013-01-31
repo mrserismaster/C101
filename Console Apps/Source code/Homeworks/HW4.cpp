@@ -10,6 +10,7 @@ using namespace std;
 int main()
 {
 
+	char letter;
 	int id, choice;
 	double score1, score2, score3, grade;
 
@@ -42,11 +43,20 @@ int main()
 
 	grade = ((score1 + score2 + score3) / 3);
 
-
+	if (grade >= 90)
+		letter = 'A';
+	else if (grade >= 80)
+		letter = 'B';
+	else if (grade >= 70)
+		letter = 'C';
+	else if (grade >= 60)
+		letter = 'D';
+	else
+		letter = 'F';
 
 	cout << "--------------------------------\n"
 		 << "Student ID		Grade (%)		Final Grade\n"
-		 << id << "			" << grade << "		";
+		 << id << "			" << grade << "			" << letter << endl;
 
 
 
