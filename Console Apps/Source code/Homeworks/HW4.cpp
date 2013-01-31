@@ -11,7 +11,7 @@ int main()
 {
 
 	int id, choice;
-	double score1, score2, score3;
+	double score1, score2, score3, grade;
 
 	cout << "*****************************************\n"
 		 << "Welcome to Grade Book. Please select one of 2 options\n"
@@ -26,11 +26,27 @@ int main()
 		exit;
 
 	cout << endl
-		 << "--------------------------------"
+		 << "--------------------------------\n"
 		 << "Student ID: ";
 	
 	cin >> id;
 
+	cout << "Exam 1 score: ";
+	cin >> score1;
+
+	cout << "Exam 2 score: ";
+	cin >> score2;
+
+	cout << "Exam 3 score: ";
+	cin >> score3;
+
+	grade = ((score1 + score2 + score3) / 3);
+
+
+
+	cout << "--------------------------------\n"
+		 << "Student ID		Grade (%)		Final Grade\n"
+		 << id << "			" << grade << "		";
 
 
 
