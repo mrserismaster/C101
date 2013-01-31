@@ -1,4 +1,4 @@
-// temperature.cpp:  
+// temperature.cpp:ï¿½ï¿½
 // Author: Derrik Campau
 // Date: 1/30/13
 // Compiler: Microsoft Visual C++ .NET
@@ -19,14 +19,11 @@ int main()
 	
 		cout << "You probably have a fever";
 	
-	if ((body_temperature < 98.6) && (body_temperature >= 96.0))
+	else if ((body_temperature < 98.6) && (body_temperature >= 96.0))
 	
 		cout<< "You have a normal temperature";
-	
 	else
-	
 		cout << "I cannot tell, please see your doctor";
-	
 
 	return 0;
 
