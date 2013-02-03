@@ -4,7 +4,6 @@
 // Compiler: MS Visual C++ .NET
 
 #include<iostream>
-#include<iomanip>
 
 using namespace std;
 
@@ -26,18 +25,40 @@ int main()
 
 	subtotal = ((pizza + other) - discount);
 
-	cout << "----------------------------" << endl << endl;
+	cout.setf(ios::fixed);
+	cout.setf(ios::showpoint);
+	cout.precision(2);
+
+	cout << "-------------------------------" << endl << endl;
 
 	cout << "Cost of pizza:		$" << pizza << endl
 		 << "Cost of other items:	$" << other << endl
 		 << "Less discounts:		$" << discount << "CR" << endl
-		 << "============================" << endl
-		 << setprecision(2) << "Subtotal:		$" << subtotal << endl
-		 << setprecision(2) << "Plus 0.06 sales tax:	$" << (subtotal * .06) << endl
-		 << "============================" << endl
-		 << setprecision(2) << "Grand total:		$" << (subtotal * 1.06) << endl << endl
-		 << setprecision(2) << "Gratuity:		$" << ((subtotal * 1.06) * (tip / 100)) << endl;
+		 << "===============================" << endl
+		 << "Subtotal:		$" << subtotal << endl
+		 << "Plus 0.06 sales tax:	$" << (subtotal * .06) << endl
+		 << "===============================" << endl
+		 << "Grand total:		$" << (subtotal * 1.06) << endl << endl
+		 << "Gratuity:		$" << ((subtotal * 1.06) * (tip / 100)) << endl;
 
 	return 0;
 }
 
+/*
+Cost of pizza?: => 12.99
+Cost of other items?: => 4.99
+Discounts?: => 2.49
+Percent tip?: => 12
+-------------------------------
+
+Cost of pizza:          $12.99
+Cost of other items:    $4.99
+Less discounts:         $2.49CR
+===============================
+Subtotal:               $15.49
+Plus 0.06 sales tax:    $0.93
+===============================
+Grand total:            $16.42
+
+Gratuity:               $1.97
+*/
