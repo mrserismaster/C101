@@ -9,15 +9,17 @@ using namespace std;
 
 int main()
 {
-	int number, i;
+	int number;
 	int sum = 0;
+	int i = 1
 
 	cout << "Please enter a positive number: ";
 	cin >> number;
 
-	for (i=1; i<=number; i++)
+	while (i<=number)
 	{
 		sum = sum + i;
+		i++;
 	}
 
 	cout << "The summation of " << number << " is " << sum << endl;
