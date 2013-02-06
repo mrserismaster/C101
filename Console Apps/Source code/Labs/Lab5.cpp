@@ -11,7 +11,7 @@ int main()
 {
 	int number;
 	int sum = 0;
-	int i = 1
+	int i = 1;
 
 	cout << "Please enter a positive number: ";
 	cin >> number;
