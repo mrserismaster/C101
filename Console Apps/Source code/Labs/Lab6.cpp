@@ -10,8 +10,12 @@ int main ()
 {
 	int m, n;
 
-	for (m=0; m<10; m++)
+	for (m=10; m>0; m--)
 	{
+		//for (n=10; n>m; n--) cout << " ";
+		//for (n=10; n>(19-2*m); n--) cout << "*";
+		//for (n=10; n>m; n--) cout << " ";
+
 		for (n=0; n<m; n++) cout << " ";
 		for (n=0; n<(19-2*m); n++) cout << "*";
 		for (n=0; n<m; n++) cout << " ";
