@@ -13,19 +13,26 @@ int main()
 	char letter;
 	int id, choice;
 	double score1, score2, score3, grade;
+	choice = 1;
 
-	cout << "*****************************************\n"
-		 << "Welcome to Grade Book. Please select one of 2 options\n"
-		 << "1. Enter the student score and determine grade\n"
-		 << "2. Exit the program\n"
-		 << "*****************************************\n"
-		 << "Enter Selection: ";
-	
+	while (choice == 1)
+	{
+	if (choice == 1) {
+		cout << "*****************************************\n"
+			<< "Welcome to Grade Book. Please select one of 2 options\n"
+			<< "1. Enter the student score and determine grade\n"
+			<< "2. Exit the program\n"
+			<< "*****************************************\n"
+			<< "Enter Selection: ";
 	cin >> choice;
+	}
+	if (choice != 1) {
+		cout << "GoodBye!\n";
+		return 0;
+	}
 
-	if (choice == 2)
-		exit;
 
+	
 	cout << endl
 		 << "--------------------------------\n"
 		 << "Student ID: ";
@@ -57,9 +64,10 @@ int main()
 	cout << "--------------------------------\n"
 		 << "Student ID		Grade (%)		Final Grade\n"
 		 << id << "			" << grade << "			" << letter << endl;
+	}
 
-
-
+	if (choice == 2)
+		exit;
 
 
 	return 0;
