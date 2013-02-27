@@ -69,6 +69,6 @@ int determine_day_of_week(int day, int month, int year)
 	}
 	s = (day + floor(2.6*month - 0.2) - 2*c + y + floor(y/4.0) + floor(c/4.0));
 	weekDay = s % 7;
-	cout << day << " " << weekDay << " " << y << " " << c << " " << s << endl;
+	
 	return (weekDay);
 }
