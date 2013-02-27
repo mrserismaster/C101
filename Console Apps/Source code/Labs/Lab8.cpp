@@ -42,7 +42,7 @@ int main()
 } 
 int determine_day_of_week(int day, int month, int year) 
 { 
- int weekDay, c, y, s;
+ int dayOfWeek, c, y, s;
 	if ((year % 100 == 0) && (month == 1))
 	{
 		c = (year / 100) -1;
@@ -68,7 +68,7 @@ int determine_day_of_week(int day, int month, int year)
 		month = month - 2;
 	}
 	s = (day + floor(2.6*month - 0.2) - 2*c + y + floor(y/4.0) + floor(c/4.0));
-	weekDay = s % 7;
+	dayOfWeek = s % 7;
 	
-	return (weekDay);
+	return (dayOfWeek);
 }
