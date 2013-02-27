@@ -28,7 +28,7 @@ int main ()
 				cout << i << " \t";
 		}
 	}
-
+	
 	cout <<endl; 
    
 return 0; 
