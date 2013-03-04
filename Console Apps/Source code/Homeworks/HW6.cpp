@@ -4,7 +4,6 @@
 // This program will add the digits of the number entered by the user
 
 #include <iostream>
-#include <cmath>
 
 int digitSumCalc(int);
 

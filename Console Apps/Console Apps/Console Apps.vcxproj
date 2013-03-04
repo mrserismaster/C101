@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Source code\Labs\Lab9.cpp" />
+    <ClCompile Include="..\Source code\Homeworks\HW6.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{AB2F961C-15D9-48FF-AF99-4816DE20A4EC}</ProjectGuid>
