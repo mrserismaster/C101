@@ -34,3 +34,8 @@ int digitSumCalc(int number) {
 
 	return sum;
 }
+
+/*
+Please enter a positive integer: 4567
+The digit sum of the number you entered is: 22
+*/
