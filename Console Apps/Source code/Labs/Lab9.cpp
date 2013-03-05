@@ -15,19 +15,20 @@ bool is_prime(int);
 int main () {
 
 	int input, p1, p2, j;
-	p1 = 0;
+	p1 = 2;
 	p2 = 0;
-	j = 2;
+	j = 1;
 
 	cout << "Please enter an even positive integer larger than 2: ";
 	cin >> input;
 
 	for (int i=2; i<input-1; i++);
-		j++;
 	{
-		if (is_prime(j) && is_prime(input));
+		j = j++;
+
+		if ((is_prime(j)) && (is_prime(input - p1)));
 			p1 = j;
-			p2 = input-p1;
+			p2 = (input - p1);
 	}
 
 	cout << input << " can be decomposed into two prime numbers " << p1 << "  and " << p2 << endl;
@@ -44,11 +45,11 @@ bool is_prime(int n) {
 	for (int i=2; i<=n; i++); {
 		int m = 1;
 		m++;
-		if (m == 2)					// Eliminates a scneario where the program would check 2 % 2 and not print 2 to the screen
+		if (n == 2)
 			prime = true;
-		else if (m % n == 0)		// Checks to see if number can be divided by another, smaller int
+		else if (m % n == 0)
 			prime = false;
-		else if (m == n+1)			// Prints number if prime
+		else if (m == n+1)
 			prime = true;
 /*		//if (n == 2)
 			//prime = true;
