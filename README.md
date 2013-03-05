@@ -1,5 +1,5 @@
 C101
 ====
 
-Repo for C101 Programming Class
+Repo for C++ Programming Class
 
