@@ -18,7 +18,7 @@ int main() {
 
 	result = digitSumCalc(input);		//calls the digitsum function
 
-	cout << "The digit sum of the number you entered is: " << result << endl;
+	cout << "The digit sum of " << input << " is " << result << endl;
 
 	return 0;
 }
